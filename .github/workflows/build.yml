@@ -231,16 +231,6 @@ jobs:
           python -m pip install twine
           twine check dist/*
 
-      - name: Publish to TestPyPI (if not a release)
-        if: github.event_name != 'release'
-        env:
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
-          TWINE_REPOSITORY: testpypi
-        run: |
-          echo "🚀 Publishing to TestPyPI..."
-          twine upload dist/* --verbose
-
       - name: Publish to PyPI (if release)
         if: github.event_name == 'release'
         env:
