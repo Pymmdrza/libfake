@@ -1,19 +1,21 @@
 """
 Version information for LibFake package.
 This is the single source of truth for version numbers.
+
+Requires Python 3.8+
 """
 
-__author__ = "LibFake Team"
-__author_email__ = "info@libfake.com"
+__author__ = "Mmdrza"
+__author_email__ = "pymmdrza@gmail.com"
 __description__ = (
     "A professional library for generating realistic fake names and emails"
 )
-__url__ = "https://github.com/libfake/libfake"
+__url__ = "https://github.com/Pymmdrza/libfake"
 
 # Version components for programmatic access
-VERSION_MAJOR = 2
+VERSION_MAJOR = 1
 VERSION_MINOR = 0
-VERSION_PATCH = 0
+VERSION_PATCH = 1
 VERSION_SUFFIX = ""  # e.g., "a1", "b1", "rc1", "" for stable
 
 # Build the version string
@@ -24,4 +26,4 @@ else:
 
 # Additional metadata
 __license__ = "MIT"
-__copyright__ = "2025 LibFake Team"
+__copyright__ = "2025 Mmdrza"
