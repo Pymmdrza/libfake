@@ -125,7 +125,7 @@ class FakeName:
             provider (Optional[str]): Email provider to use. If None, a random one is chosen.
 
         Returns:
-            dict: Contains 'full_name' and 'email'.
+            dict: Contains 'first_name' and 'surname' , 'full_name' and 'email'.
             :param first_name:
             :param surname:
             :param provider:
@@ -133,3 +133,9 @@ class FakeName:
         first_name = first_name or self.get_firstname()
         surname = surname or self.get_surname()
         email = self.generate_email(first_name=first_name, surname=surname) if not provider else f"{first_name}.{surname}@{provider}"
+        return {
+            "first_name": first_name,
+            "surname": surname,
+            "full_name": f"{first_name} {surname}",
+            "email": email
+        }
