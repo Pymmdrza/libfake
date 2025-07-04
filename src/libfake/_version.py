@@ -13,9 +13,9 @@ __description__ = (
 __url__ = "https://github.com/Pymmdrza/libfake"
 
 # Version components for programmatic access
-VERSION_MAJOR = 1
+VERSION_MAJOR = 2
 VERSION_MINOR = 0
-VERSION_PATCH = 1
+VERSION_PATCH = 0
 VERSION_SUFFIX = ""  # e.g., "a1", "b1", "rc1", "" for stable
 
 # Build the version string
