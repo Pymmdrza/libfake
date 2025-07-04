@@ -191,6 +191,12 @@ jobs:
           echo "📋 Package contents:"
           tar -tf dist/*.tar.gz | head -20
 
+      - name: Validate package with twine
+        run: |
+          echo "🔍 Validating package with twine..."
+          twine check dist/*
+          echo "✅ Package validation passed"
+
       - name: Test installation from built package
         run: |
           echo "🧪 Testing installation..."
