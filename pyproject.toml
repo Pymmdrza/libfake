@@ -1,5 +1,7 @@
+# pyproject.toml
+
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -10,7 +12,10 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
 authors = [
-    {name = "LibFake Team"}
+    {name = "LibFake Team", email = "info@libfake.com"}
+]
+maintainers = [
+    {name = "LibFake Team", email = "info@libfake.com"}
 ]
 dependencies = [
     "rich>=10.0.0"
@@ -51,11 +56,14 @@ dev = [
 [tool.setuptools.dynamic]
 version = {attr = "libfake._version.__version__"}
 
+[tool.setuptools]
+include-package-data = true
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools.package-data]
-libfake = ["data/*.DIC"]
+"libfake" = ["data/*.DIC"]
 
 [tool.black]
 line-length = 88
