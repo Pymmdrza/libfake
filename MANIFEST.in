@@ -1,5 +1,9 @@
 include README.md
 include LICENSE
+include pyproject.toml
 recursive-include src/libfake/data *.DIC
 global-exclude __pycache__
 global-exclude *.py[co]
+global-exclude *~
+global-exclude *.so
+global-exclude .git*
