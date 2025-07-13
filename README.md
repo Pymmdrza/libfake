@@ -2,6 +2,9 @@
 
 First name , Surname and Email Fake Mode in Python with Library Fake.
 
+It has happened repeatedly that a programmer wants to create different users in a project for the user parts of his project with fictitious names and emails that are close to reality, for necessary checks or initial presentation, or other similar cases. This library has been created to meet the needs of this category of functions in a specialized way and using standard and optimized Python methods, and all its components are visible as open source.
+Using real and existing first and last names, all first and last names are created, and to use a large amount of this information for ease of use and to prevent the consumption of user resources, the required files are optimized and imported as a singleton, which is a trick that increases the speed of creation incomparably, along with other techniques used.
+
 ## Install
 
 ```bash
