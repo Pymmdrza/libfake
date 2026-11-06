@@ -37,10 +37,10 @@ classifiers = [
 keywords = ["fake", "data", "generator", "names", "email", "testing", "mock"]
 
 [project.urls]
-Homepage = "https://github.com/libfake/libfake"
-Repository = "https://github.com/libfake/libfake"
-Issues = "https://github.com/libfake/libfake/issues"
-Documentation = "https://github.com/libfake/libfake#readme"
+Homepage = "https://github.com/Pymmdrza/libfake"
+Repository = "https://github.com/Pymmdrza/libfake"
+Issues = "https://github.com/Pymmdrza/libfake/issues"
+Documentation = "https://github.com/Pymmdrza/libfake#readme"
 
 [project.scripts]
 libfake = "libfake.cli:main"
